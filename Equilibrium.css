@@ -1,13 +1,13 @@
 body {
     background-color: hsl(217, 54%, 11%);
-    margin: auto;
-    padding: 100px;
+
 }
+
 .main-container {
-background-color: hsl(216, 50%, 16%);
-width: 30%;
-margin: auto;
-padding: 20px;
+    background-color: hsl(216, 50%, 16%);
+    width: 50%;
+    margin: auto;
+    padding: 20px;
 }
 
 #image-equilibrium {
@@ -17,10 +17,11 @@ padding: 20px;
 }
 
 .third-container {
-display: flex;
-align-items: center;
-justify-content: space-between;
-border-bottom: 2px solid hsl(215, 32%, 27%)
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid hsl(215, 32%, 27%)
 }
 
 h1 {
@@ -28,6 +29,7 @@ h1 {
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
+    font-size: 20px;
     color: white
 }
 
@@ -49,6 +51,7 @@ p {
     align-items: center;
     gap: 1.0rem;
 }
+
 .days {
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
@@ -70,6 +73,38 @@ p {
     align-items: center;
     gap: 1.0rem;
 }
+
 span {
-color: white;
+    color: white;
+}
+
+@media only screen and (min-width: 374px) {
+    .Main-Container {
+        width: 100%;
+        margin: auto;
+        padding: 50px;
+        display: flex;
+        /* justify-content: center;
+   align-items: center; */
+        width: 100%;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .third-container {
+        display: flex;
+        align-content: center;
+        flex-direction: row;
+    }
+
+    h1 {
+        font-size: 15px;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
 }
