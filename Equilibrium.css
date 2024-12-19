@@ -5,9 +5,8 @@ body {
 
 .main-container {
     background-color: hsl(216, 50%, 16%);
-    width: 50%;
-    margin: auto;
-    padding: 20px;
+    width: 100%;
+   
 }
 
 #image-equilibrium {
@@ -42,6 +41,8 @@ p {
 }
 
 .ETH {
+    width: 0.5px;
+    height: 0.5px;
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
@@ -80,13 +81,11 @@ span {
 
 @media only screen and (min-width: 374px) {
     .Main-Container {
-        width: 100%;
-        margin: auto;
-        padding: 50px;
+        width: 50%;
+        margin: auto; 
         display: flex;
-        /* justify-content: center;
-   align-items: center; */
-        width: 100%;
+        justify-content: center;
+        align-items: center;
     }
 
     p {
@@ -97,6 +96,8 @@ span {
         display: flex;
         align-content: center;
         flex-direction: row;
+        align-items: center;
+        gap: 4.5rem;
     }
 
     h1 {
@@ -105,6 +106,29 @@ span {
 
     h2 {
         font-size: 15px;
+    }
+
+    .days {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        color: hsl(228, 45%, 44%);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.0rem;
+    }
+
+    .Creation {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        color: hsl(228, 45%, 44%);
+        display: flex;
+        align-items: center;
+        gap: 1.0rem;
     }
 
 }
